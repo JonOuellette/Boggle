@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<section id = "boggle">
     <table class = "board">
         <tbody>
             {% for row in board %}
@@ -24,6 +25,12 @@
         <input type="text" name = "word" class = "word">
         <button>Submit</button>
     </form>
-
+</section>
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="/static/boggle.js"></script>
+    <script>let game = new BoggleGame("boggle", 60); </script>
+    
+      
 </body>
 </html>
