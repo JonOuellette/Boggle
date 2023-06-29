@@ -30,4 +30,4 @@ def check_word():
 
 @app.route("/post-score", methods= ["POST"])
 def post_score():
-      
+      score = request.json["score"]
